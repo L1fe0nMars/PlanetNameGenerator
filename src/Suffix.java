@@ -35,7 +35,6 @@ public class Suffix {
         "ar",
         "are",
         "ark",
-        "arr",
         "ars",
         "arse",
         "arv",
