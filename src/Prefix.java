@@ -219,6 +219,7 @@ public class Prefix {
             "Oct",
             "Octh",
             "Od",
+            "Og",
             "Ogd",
             "Ogl",
             "Ogn",
@@ -301,6 +302,7 @@ public class Prefix {
             "Ulg",
             "Ultr",
             "Ulv",
+            "Umb",
             "Umbr",
             "Un",
             "Undr",
@@ -310,6 +312,7 @@ public class Prefix {
             "Urgl",
             "Urkl",
             "Urs",
+            "Ut",
             "Uv",
             "Ux",
             "Uz",
@@ -387,6 +390,7 @@ public class Prefix {
             "Typhl",
             "Tyr",
             "Tyth",
+            "Tyx",
             "Vyk",
             "Wy",
             "Xyl",
@@ -394,6 +398,7 @@ public class Prefix {
             "Xyn",
             "Xynth",
             "Xyr",
+            "Xyv",
             "Zy",
             "Zyg",
             "Zyk",
@@ -402,6 +407,7 @@ public class Prefix {
             "Zynt",
             "Zyr",
             "Zyth",
+            "Zyv",
         },
     };
 
@@ -412,11 +418,8 @@ public class Prefix {
      */
     public static String getPrefix() {
         Random rand = new Random();
-        String prefix;
-        String[] letter;
-
-        letter = prefixes[rand.nextInt(prefixes.length)];
-        prefix = letter[rand.nextInt(letter.length)];
+        String[] letter = prefixes[rand.nextInt(prefixes.length)];
+        String prefix = letter[rand.nextInt(letter.length)];
 
         return prefix;
     }
